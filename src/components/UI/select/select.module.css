@@ -1,0 +1,20 @@
+select {
+    appearance: none;
+    padding: 8px 16px;
+    font-size: 16px; 
+    border: 1px solid #ff4e4e;
+    border-radius: 4px;
+    background-color: #fad0d0;
+    cursor: pointer; 
+    padding: 12px 20px;
+    margin: 8px 0;
+  }
+  
+  option {
+    padding: 8px 16px;
+    font-size: 16px; 
+  }
+  
+  option:checked {
+    background-color: #b4383896; 
+  }

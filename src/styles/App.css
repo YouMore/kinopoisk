@@ -1,0 +1,45 @@
+.pagination {
+    margin-top: 30px;
+    display: flex;
+}
+
+.page {
+    padding: 10px;
+    border: 1px solid red;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.curPage {
+    border: 2px solid rgb(13, 1, 140);
+    font-weight: inherit;
+}
+
+.navbar{
+    background: rgb(225, 209, 209);
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+}
+
+.navbarlinks{
+    margin-left: 0px;
+    margin-right: auto;
+}
+
+.navbarlinks a {
+    color: rgb(167, 0, 0);
+    text-decoration: none;
+    margin-right: 5px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    background-color: rgba(255, 255, 255, 0); 
+    border: 2px solid rgb(210, 4, 4); 
+  }
+  
+  .navbarlinks a:hover {
+    background-color: rgba(164, 19, 19, 0.2); 
+  }

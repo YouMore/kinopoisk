@@ -1,0 +1,12 @@
+.image-container {
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    margin: 10px; /* Добавляем отступы по всем сторонам в 10px */
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+  }
+  

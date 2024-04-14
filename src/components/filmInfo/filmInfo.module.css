@@ -1,0 +1,24 @@
+.film-details {
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+    height: 400px;
+    width: 80%;
+  }
+  
+  .film-name {
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .film-description {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .film-rating {
+    color: #999;
+    font-size: 14px;
+    padding: 30px 0;
+  }
+  

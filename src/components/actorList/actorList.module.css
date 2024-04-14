@@ -1,0 +1,40 @@
+.actors-list {
+font-family: Arial, sans-serif;
+}
+
+.actors-list h2 {
+color: #333;
+}
+
+.actors-list ul {
+list-style: none;
+padding: 0;
+}
+
+.actors-list li {
+margin-bottom: 20px;
+}
+
+.actors-list img {
+width: 150px;
+height: auto;
+border-radius: 50%;
+margin-right: 10px;
+float: left;
+}
+
+.actors-list h3 {
+margin-top: 0;
+font-size: 1.2em;
+}
+
+.actors-list p {
+margin-top: 5px;
+font-size: 1em;
+}
+
+.pagination .descriptionPag {
+    margin: 0 10px;
+    font-size: 14px;
+    color: #666;
+}
