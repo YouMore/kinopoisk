@@ -14,7 +14,7 @@ const FilmList = ({films}) => {
     return (
         <div>
             <h1 >
-                СПИСОК ФИЛЬМОв
+                СПИСОК ФИЛЬМОВ
             </h1>
             <div style={{display:"flex", flexWrap:"wrap", justifyContent:"space-between"}}>
                 {films.map(film =>

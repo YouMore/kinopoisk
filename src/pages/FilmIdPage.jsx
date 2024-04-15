@@ -8,16 +8,25 @@ import ActorList from "../components/actorList/ActorList";
 import SameFilmsCarusel from "../components/sameFilmsCarusel/SameFilmsCarusel";
 import FilmButton from "../components/UI/button/FilmButton";
 import SeasonsList from "../components/seasonsList/SeasonList";
+import { responsivePropType } from "react-bootstrap/esm/createUtilityClasses";
 
 function FilmIdPage (){
     const params = useParams();
     const [film, setFilm] = useState({});
     const [comment, setComment] = useState([]);
     const [pageComments, setPageComments] = useState(1);
+    const [posterImages, setPosterImages] = useState([]);
 
     const [fetchFilmById, isLoading, error] = useFetching( async (id)=>{
       const response = await FilmService.getById(params.id);
+      const responsePosterImages = await FilmService.getPosterImagesByFilmId(params.id);
       setFilm(response);
+      setPosterImages(responsePosterImages.docs);
+    });
+
+    const [fetchPosterImages, isPosterLoading, errorPoster] = useFetching( async (id)=>{
+      const responsePosterImages = await FilmService.getPosterImagesByFilmId(params.id);
+      setPosterImages(responsePosterImages.docs);
     });
 
     const [totalCountComments, setTotalCountComments]= useState(0);
@@ -30,6 +39,7 @@ function FilmIdPage (){
 
     useEffect(()=>{
       fetchFilmById(params.id);
+      fetchPosterImages(params.id);
     }, [params.id]);
 
     useEffect(()=>{
@@ -44,7 +54,7 @@ function FilmIdPage (){
           {isLoading
             ? <h1 style={{textAlign:"center"}}>Загружаем</h1>
             : <div>
-                <Poster imageUrl={film.poster?.previewUrl}/>
+                <Poster posters={posterImages}/>
                 
                 <FilmInfo name={film.name} description={film.description} rating={film.rating?.kp}/>
                 <ActorList actors={film.persons}/>

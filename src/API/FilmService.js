@@ -37,5 +37,17 @@ export default class FilmService {
         return response.data;
     }
 
+    static async getPosterImagesByFilmId(id){
+        const response = await axios.get("https://api.kinopoisk.dev/v1.4/image", {
+            params:{
+                movieId: id
+            },
+            headers: {    
+                'X-API-KEY': process.env.REACT_APP_TOKEN
+            }
+        });
+        return response.data;
+    }
+
 }
 
