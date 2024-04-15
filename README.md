@@ -1,6 +1,6 @@
 Проект для Авито
 Работал на Windows поэтому для запуска использовал команду:
-set REACT_APP_TOKEN=<apiToken> && npm run start
+set REACT_APP_TOKEN=< apiToken > && npm run start
 Чтобы запустить приложение и установить переменную окружения REACT_APP_TOKEN в проекте
 для установки зависимостей использовалась npm install
 Проект доступен на http://localhost:7070
