@@ -21,7 +21,7 @@ function RandomFilm() {
         // страна countries.name
         // сериал\фильм type
         // год выпуска year
-        // рейтинг кинопоиска(>значения) rating.kp
+        // рейтинг кинопоиска(значения) rating.kp
         // сеть производства(hbo netflix) networks.items.name
         // все доступные значения можно получить по адресу https://api.kinopoisk.dev/v1/movie/possible-values-by-field
         // необходимо только указать какой параметр нам нужен, 
